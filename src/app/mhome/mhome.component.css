@@ -1,0 +1,108 @@
+:host {
+    font-family: 'Fira Sans Condensed', Arial, Helvetica, sans-serif;
+}
+:host .wrap {
+    text-align: center;
+    height: 100%;
+    min-height: 480px;
+    min-width: 1024px;
+    background: linear-gradient(to top, rgba(54,60,82,1) 0%,rgba(115,124,161,1) 100%);
+}
+:host header {
+    height: 40%;
+    display: grid;
+}
+:host header img {
+    justify-self: center;
+    align-self: center;
+}
+:host ul {
+    display: grid;
+    height: 30%;
+    grid-template-columns: 33.33% 33.33% 33.34%;
+    /*grid-template-rows: 30%;*/
+    /*justify-content: space-around;
+    align-content: center;*/
+}
+:host ul li {
+    list-style-type: none;
+    justify-self: center;
+    align-self: center;
+}
+:host ul li .info {
+    padding: 15px 10px 15px 70px;
+    width: 300px;
+    font-weight: 300;
+    font-style: italic;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    margin-bottom: 30px;
+    position: relative;
+}
+:host ul li .info i {
+    position: absolute;
+    display: block;
+    top: 15px;
+    left: 15px;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 36px;
+}
+:host ul li a {
+    display: block;
+    width: 300px;
+    padding: 0 15px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    line-height: 40px;
+    font-size: 24px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-weight: 100;
+    background-color: #363c52;
+    transition: 0.3s all;
+}
+:host ul li a:hover {
+    background-color: transparent;
+}
+:host footer {
+    height: 30%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+:host footer > a {
+    display: block;
+    width: 300px;
+    padding: 0 15px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    line-height: 48px;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-weight: 300;
+    background-color: #363c52;
+    transition: 0.3s all;
+}
+:host footer > a:hover {
+    background-color: transparent;
+}
+:host footer .f_links {
+    color: #fff;
+    font-weight: 100;
+}
+:host footer .f_links a {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}

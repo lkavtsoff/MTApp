@@ -1,0 +1,35 @@
+:host .logo {
+    width: 100%;
+    height: 100px;
+    background-color: #363c52;
+    padding: 15px;
+}
+:host .logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+:host nav ul li {
+    list-style-type: none;
+    display: block;
+    height: 80px;
+    padding: 10px;
+}
+:host nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+:host nav ul li.active a {
+    color: #363c52;
+    cursor: default;
+}
+:host nav ul li a i {
+    font-size: 36px;
+}
+:host nav ul li a p {
+    margin-top: 6px;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 18px;
+}

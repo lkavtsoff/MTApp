@@ -1,0 +1,152 @@
+<div class="wrap">
+	<div class="mmenu">
+		<mmenu></mmenu>
+		<ul class="actions">
+			<li (click)="openFilters()" [class.active]="filterOpened">
+				<i class="icon-filter"></i>
+				<p>Filter</p>
+			</li>
+			<li>
+				<i class="icon-tools"></i>
+				<p>Settings</p>
+			</li>
+		</ul>
+	</div>
+	<section class="sl_wrap">
+		<ul class="seaf_list">
+			<li>
+				<i class="icon-person"></i>
+				<p class="name">Alexander Petrov</p>
+				<p class="rank">Bosun</p>
+			</li>
+			<li>
+				<div class="img_wrap">
+					<img src="../assets/imgs/1.jpg"/>
+				</div>
+				<p class="name">Alexander Petrov</p>
+				<p class="rank">Bosun</p>
+			</li>
+			<li class="active">
+				<i class="icon-person"></i>
+				<p class="name">Alexander Petrov</p>
+				<p class="rank">Bosun</p>	
+			</li>
+			<li>
+				<div class="img_wrap">
+					<img src="../assets/imgs/1.jpg" />
+				</div>
+				<p class="name">Alexander Petrov</p>
+				<p class="rank">Bosun</p>
+			</li>
+			<li>
+				<i class="icon-person"></i>
+				<p class="name">Alexander Petrov</p>
+				<p class="rank">Bosun</p>
+			</li>
+			<li>
+				<div class="img_wrap">
+					<img src="../assets/imgs/1.jpg" />
+				</div>
+				<p class="name">Alexander Petrov</p>
+				<p class="rank">Bosun</p>
+			</li>
+			<li>
+				<i class="icon-person"></i>
+				<p class="name">Alexander Petrov</p>
+				<p class="rank">Bosun</p>
+			</li>
+		</ul>
+		<div class="paginate">
+			<span class="prev">
+				<i class="icon-arr-right"></i>
+			</span>
+			<p>21-40 from 69</p>
+			<span class="next">
+				<i class="icon-arr-left"></i>
+			</span>
+		</div>
+		<div class="filter_block_home" *ngIf="filterOpened">
+			<ul>
+				<li (click)="open2Filter('rank')">Rank<i class="icon-arr-right"></i></li>
+				<li (click)="open2Filter('spec')">Speciality<i class="icon-arr-right"></i></li>
+				<li (click)="toggleVoyage()">Not on voyage <div class="mod_check"><span class="mod_check_inn" *ngIf="filterSettings.notOnVoyage"></span></div></li>
+				<li>Favourites</li>
+			</ul>
+			<div class="actions">
+				<i class="icon-arr-left" (click)="closeFilters()"></i>
+				<ul>
+					<li><i class="icon-add"></i> Apply</li>
+					<li><i class="icon-save"></i> Save</li>
+				</ul>
+			</div>
+		</div>
+		<div class="filter_block_list" *ngIf="filter2Opened">
+			<ul>
+				<li>Master</li>
+				<li>Master trainee</li>
+				<li>Chief officer</li>
+				<li>Second officer</li>
+				<li>Third officer</li>
+				<li>Fourth officer</li>
+			</ul>
+			<div class="actions">
+				<i class="icon-arr-left" (click)="close2Filter()"></i>
+				<ul>
+					<li><i class="icon-add"></i> Add</li>
+					<li><i class="icon-remove"></i> Reset</li>
+				</ul>
+			</div>
+		</div>
+		<div class="settings_block_home">
+			<ul>
+				<li>Edit profile</li>
+				<li>I'm on voyage <div class="mod_check"><span class="mod_check_inn" *ngIf="filterSettings.notOnVoyage"></span></div></li>
+			</ul>
+			<div class="actions">
+				<i class="icon-arr-left" (click)="close2Filter()"></i>
+				<ul>
+					<li><i class="icon-save"></i> Save</li>
+					<li><i class="icon-remove"></i> Reset</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<div class="seaf_info">
+		<div class="no_info">
+			<i class="icon-person"></i>
+			<section>
+				<i class="icon-arr-left"></i>
+				<p>Specify the seafarer from the list to see more details.<br>If there are shown hidden fields in the project, please <a href="#">sign in</a>.</p>
+			</section>
+		</div>
+		<div class="seaf_details">
+			<section>
+				<img src="../assets/imgs/1.jpg"/>
+				<h3>Sergey Vasiliev</h3>
+				<h4>Bosun</h4>
+			</section>
+			<ul>
+				<li>
+					<p>Date of birth</p>
+					<h5>25.04.1967</h5>
+				</li>
+				<li>
+					<p>Email</p>
+					<h5>vasiliev@mail.com</h5>
+				</li>
+				<li>
+					<p>Country</p>
+					<h5>Ukraine</h5>
+				</li>
+				<li>
+					<p>City</p>
+					<h5>Odessa</h5>
+				</li>
+			</ul>
+			<div class="actions">
+				<i class="icon-envelope"></i>
+				<i class="icon-add"></i>
+			</div>
+		</div>
+	</div>
+</div>
